@@ -109,15 +109,15 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100px;
     height: 100%;
     color: white;
     font-weight: bold;
 }
-.items .items-link:hover{
-    background-color: rgb(93, 93, 129);
+.items-link:hover{
+    background-color: aqua;
+    border-radius: 20px;
 }
-
 
 .lateral{
     grid-column: 1 / 2;
