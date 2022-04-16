@@ -1,5 +1,9 @@
 :root{
-    --margin:5px;
+    --margin5:5px;
+    --mrgn10:10px;
+    --txt-sm:1.6rem;
+    --txt-md:1.8rem;
+    --txt-lg:2rem;
     --wht:rgb(208, 200, 228);
 }
 *{
@@ -100,7 +104,7 @@ main{
 .items{
     width: 100%;
     height: 40px;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin5);
     text-align: center;
     font-size: medium;
 }
@@ -128,11 +132,11 @@ main{
 .container-lateral .container-title{
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin5);
 }
 .container-lateral .container-description{
     font-size: 1.4rem;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin5);
 }
 .container-lateral .container-seemore{
     font-size: 1.4rem;
@@ -142,7 +146,7 @@ main{
     height: 80px;
     border-radius: 5px;
     background-color: aqua;
-    margin: var(--margin);
+    margin: var(--margin5);
     padding: 5px;
 }
 
@@ -204,20 +208,19 @@ main{
     color: var(--wht);
 }
 .info .infoparrafo{
-
     padding: 5px;
 }
 .info-title{
-    font-size: 1.8rem;
+    font-size: var(--txt-md);
     font-weight: bold;
     margin-bottom: 10px;
 }
 .info-descripcion{
-    font-size: 1.5rem;
-    margin-bottom: var(--margin);
+    font-size: 1.6rem;
+    margin-bottom: var(--margin5);
 }
 .info-enlace{
-    font-size: large;
+    font-size: var(--txt-md);
     color: rgb(135, 135, 216);
 }
 .card-image{
@@ -230,71 +233,32 @@ main{
 .info-image{
     width: 100%;
     height: 300px;
-    background-image: url('../img/milwaukee-207229_960_720.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 5px;
 }
 footer{
     grid-column: 1 / 6;
     grid-row: 7 / 8;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
-    width: 80%;
+    width: 70%;
     justify-self: center;
     color: rgb(208, 200, 228);
 }
-.footer-title{
-    font-size: 1.8rem;
-    margin-bottom: var(--margin);
+.contact-title{
+    font-size: var(--txt-md);
+    margin-bottom: var(--mrgn10);
 }
-.footer-descripcion{
-    font-size: 1.8rem;
-    margin-bottom: var(--margin);
+.contact-descripcion{
+    font-size: var(--txt-sm);
+    margin-bottom: 10px;
+}
+.correo-name{
+    font-size: var(--txt-sm);
+    font-weight: bold;
+    margin-bottom: var(--mrgn10);
 }
 .menu{
     display: none;
 }
-@media screen and (min-width:650px) {
-    .button-menu{
-        display: none;
-    }
-    .button-active{
-        display: none;
-    }
-    .menu-active{
-        display: flex;
-        flex-direction: row;
-        width: 70%;
-        justify-self: end;
-        grid-column: 2 / 4;
-        grid-row: 1 / 2;
-        background:none;
-    }
-    .items-link:hover{
-        background-color: rgb(123, 150, 150);
-        border-radius: 20px;
-    }
-    .menu{
-        display: flex;
-        flex-direction: row;
-        width: 70%;
-        justify-self: end;
-        grid-column: 2 / 4;
-        grid-row: 1 / 2;
-        background:none;
-        padding: 5px;
-    }
-    .items{
-        width: 100%;
-        height: 35px;
-        text-align: center;
-        font-size: medium;
-    }
-    .items:hover{
-        border-radius: 10px;
-    }
-}
+
