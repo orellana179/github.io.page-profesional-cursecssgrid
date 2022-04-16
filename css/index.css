@@ -30,6 +30,10 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.main-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
 .nav-bar{
     grid-column: 1 / 6;
     grid-row: 1 / 2;
@@ -240,10 +244,11 @@ footer{
     grid-row: 7 / 8;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
+    gap: 30px;
     width: 70%;
     justify-self: center;
     color: rgb(208, 200, 228);
+    margin-bottom: 50px;
 }
 .contact-title{
     font-size: var(--txt-md);
@@ -261,4 +266,20 @@ footer{
 .menu{
     display: none;
 }
-
+.network{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.social-icons{
+    border-radius: 50%;
+}
+.social-icons:hover{
+    box-shadow: 1px 2px 2px 2px rgb(63, 60, 78);
+}

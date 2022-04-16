@@ -36,3 +36,6 @@
     .items:hover{
         border-radius: 10px;
     }
+    .info{
+        max-width: 950px;
+    }
